@@ -1,9 +1,266 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-	Mooney Lab
-</head>
-<body>
-	Coming soon!
-</body>
-</html>
+<HTML>
+<HEAD>
+
+<TITLE>Mooney Lab</TITLE>
+<!--This page layout reuses the design format from Feder Lab's site http://federlab.github.io-->
+
+<STYLE type="text/css">
+
+body
+{
+margin: 20px;
+padding: 20px;
+font-family: "Avenir", sans-serif, Courier, Serif;
+}
+
+DIV.content
+{
+border: 0px solid #5f5f5f;
+width: 550px;
+margin: 0;
+padding: 1em;
+position: absolute;
+background-color: #FFFFFF;
+left: 240px;
+top: 20px;
+}
+
+DIV.bar
+{
+border: 0px solid #5f5f5f;
+width: 200px;
+height: 300px;
+margin: 0;
+padding: 0;
+position: absolute;
+left: 65px;
+top: 45px;
+text-align: right;
+}
+
+
+p.link
+{
+color: black;
+font-family: "Avenir", sans-serif, Courier, Serif;
+font-size: 16px;
+font-weight: bold;
+text-align: left;
+}
+
+
+a:link, a:link.inlink, a:visited.inlink, a:visited
+{
+color: #0000FF;
+}
+
+
+a:link.minlink, a:visited.minlink
+{
+color: #000000;
+text-decoration: none;
+font-weight: bold;
+}
+
+a:hover, a:hover.inlink, a:hover.minlink
+{
+color: #EEC900;
+text-decoration: none;
+font-weight: bold;
+}
+
+.footer {
+  position: fixed;
+margin: 0;
+padding: 0;
+left: 50px;
+bottom: 20px;
+  }
+
+
+#contact
+{
+display: none;
+}
+
+#home
+{
+display: block;
+}
+
+#research
+{
+display: none;
+}
+
+#publications
+{
+display: none;
+}
+
+#people
+{
+display: none;
+}
+
+#lab
+{
+display: none;
+}
+
+</STYLE>
+
+<SCRIPT type="text/javascript">
+
+function homeShow()
+{
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="none";
+document.getElementById("home").style.display="block";
+document.getElementById("people").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="none";
+}
+
+function contactShow()
+{
+document.getElementById("contact").style.display="block";
+document.getElementById("publications").style.display="none";
+document.getElementById("people").style.display="none";
+document.getElementById("home").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="none";
+}
+
+function publicationsShow()
+{
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="block";
+document.getElementById("people").style.display="none";
+document.getElementById("home").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="none";
+}
+
+function peopleShow()
+{
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="none";
+document.getElementById("people").style.display="block";
+document.getElementById("home").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="none";
+}
+
+function researchShow()
+{
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="none";
+document.getElementById("home").style.display="none";
+document.getElementById("people").style.display="none";
+document.getElementById("research").style.display="block";
+document.getElementById("lab").style.display="none";
+}
+
+
+function joinShow()
+{
+document.getElementById("contact").style.display="none";
+document.getElementById("publications").style.display="none";
+document.getElementById("home").style.display="none";
+document.getElementById("people").style.display="none";
+document.getElementById("research").style.display="none";
+document.getElementById("lab").style.display="block";
+}
+
+</SCRIPT>
+<!--
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32460469-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+-->
+</HEAD>
+
+<BODY>
+
+<DIV class="bar">
+<!--    <img src = "img/logo.png" width = "50%" height = "36%"
+    style="float:left;margin:0 15px 0 0;" >
+-->
+    <br> <br> <br> <br> <br>
+<P class="link"><A href="#" class="minlink" onclick="homeShow();">Home</A></P>
+<P class="link"><A href="#" class="minlink" onclick="researchShow();">Research</A></P>
+<P class="link"><A href="#" class="minlink" onclick="publicationsShow();">Publications</A></P>
+<P class="link"><A href="#" class="minlink" onclick="peopleShow();">Team</A></P>
+<P class="link"><A href="#" class="minlink" onclick="joinShow();">Join</A></P>
+<P class="link"><A href="#" class="minlink" onclick="contactShow();">Contact</A></P>
+</DIV>
+
+<DIV class="content">
+  
+
+<DIV id="home">
+<h2>Mooney Lab</h2>
+	
+<hr>
+
+	Under construction - Coming Soon!
+
+</DIV>
+
+<DIV id="research">
+<h2>Our Research</h2>
+
+<hr>
+
+</DIV>
+
+<DIV id="lab">
+<h2>Join Mooney Lab</h2>
+
+<hr>
+
+</DIV>
+
+<DIV id="contact">
+<h2>Contact Us</h2>
+	
+<hr>
+
+</DIV>
+
+
+<DIV id="publications">
+<h2>Our Publications</h2>
+
+<hr>
+
+</DIV>
+
+<DIV id="people">
+<h2>The Team</h2>
+
+<hr>
+
+</DIV>
+
+  
+</DIV>
+
+
+</BODY>
+
+</HTML>
